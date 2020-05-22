@@ -8,7 +8,7 @@ The code written by the group can be seen in these files:
   * main.c
   * I2C_funcs.c
 
-In main.c it is only the code between these lines that are writte by the group:
+In main.c it is only the code between these lines that are written by the group:
 
 //------------	START OF CODE WRITTEN BY GR643	---------------------------------------------
 
