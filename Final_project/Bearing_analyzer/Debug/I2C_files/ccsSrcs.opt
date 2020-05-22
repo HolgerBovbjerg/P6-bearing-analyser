@@ -1,0 +1,1 @@
+"../I2C_files/MMA8451.c" "../I2C_files/aic3204.c" "../I2C_files/aic3204_init.c" "../I2C_files/ezdsp5535.c" "../I2C_files/ezdsp5535_gpio.c" "../I2C_files/ezdsp5535_i2c.c" "../I2C_files/ezdsp5535_led.c" "../I2C_files/pll.c" 

@@ -1,0 +1,49 @@
+!SESSION 2020-04-07 08:25:03.542 -----------------------------------------------
+eclipse.buildId=4.2.5.00005
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=da_DK
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui.workbench 4 2 2020-04-07 08:25:44.427
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NoSuchMethodError: com.ti.ccstudio.product.paths.PathManager.getUtilsDir()Lorg/eclipse/core/runtime/IPath;
+	at com.ti.ccstudio.compatibility.Startup.earlyStartup(Startup.java:28)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench$20.run(Workbench.java:1759)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.ui 4 4 2020-04-07 08:25:44.428
+!MESSAGE Unhandled Exception
+
+!ENTRY com.ti.ccstudio.compatibility_1 4 0 2020-04-07 08:25:44.428
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.NoSuchMethodError: com.ti.ccstudio.product.paths.PathManager.getUtilsDir()Lorg/eclipse/core/runtime/IPath;
+	at com.ti.ccstudio.compatibility.Startup.earlyStartup(Startup.java:28)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench$20.run(Workbench.java:1759)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.ui 4 4 2020-04-07 08:26:00.722
+!MESSAGE Invalid Menu Extension (Path is invalid): com.ti.ccstudio.managedbuild.ui.actions.UpgradeCodegenToolVersionAction
+
+!ENTRY org.eclipse.ui 4 4 2020-04-07 08:26:00.722
+!MESSAGE Invalid Menu Extension (Path is invalid): com.ti.common.project.ui.actions.ApplyProjectTemplateAction
+
+!ENTRY org.eclipse.ui 4 4 2020-04-07 08:26:00.723
+!MESSAGE Invalid Menu Extension (Path is invalid): org.eclipse.rtsc.xdctools.project.ui.actions.UpgradeRTSCProductVersionAction
+
+!ENTRY org.eclipse.ui 4 4 2020-04-07 08:56:42.695
+!MESSAGE Invalid Menu Extension (Path is invalid): com.ti.ccstudio.managedbuild.ui.actions.UpgradeCodegenToolVersionAction
+
+!ENTRY org.eclipse.ui 4 4 2020-04-07 08:56:42.695
+!MESSAGE Invalid Menu Extension (Path is invalid): com.ti.common.project.ui.actions.ApplyProjectTemplateAction
+
+!ENTRY org.eclipse.ui 4 4 2020-04-07 08:56:42.696
+!MESSAGE Invalid Menu Extension (Path is invalid): org.eclipse.rtsc.xdctools.project.ui.actions.UpgradeRTSCProductVersionAction
