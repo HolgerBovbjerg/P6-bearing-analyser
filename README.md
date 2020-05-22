@@ -9,8 +9,11 @@ The code written by the group can be seen in these files:
   * I2C_funcs.c
 
 In main.c it is only the code between these lines that are writte by the group:
+
 //------------	START OF CODE WRITTEN BY GR643	---------------------------------------------
+
 ...
+
 //------------	END OF CODE WRITTEN BY GR643	---------------------------------------------
 
 The rest of the files are libraries and system files used by the DSP
