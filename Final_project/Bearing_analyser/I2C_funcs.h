@@ -1,7 +1,3 @@
-#ifndef MMA8451_H_
-#define MMA8451_H_
-
-#endif /*MMA8451_H_*/
 
 void inits();
 
