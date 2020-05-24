@@ -1,0 +1,1 @@
+"../FFT_files/codec_routines.asm" "../FFT_files/configuration.c" "../FFT_files/dma_routines.c" "../FFT_files/filter_routines.c" "../FFT_files/hwafft.asm" "../FFT_files/i2s_register.asm" "../FFT_files/i2s_routines.c" "../FFT_files/rtc_routines.c" "../FFT_files/vector.asm" 
