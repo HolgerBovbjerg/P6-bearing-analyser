@@ -225,13 +225,19 @@ Int32 peaksPerRev(Int16 peaks, Int16 rpm){
 	else return peakFreq;
 }
 
+unsigned int getAbs(int n) 
+{ 
+    int const bitmask = n >> (sizeof(int) - 1); // Generate bitmask (0 for positive number, -1 for negative)
+    return ((n ^ bitmask) - bitmask);  // number XORed with bitmask. Bitmask subtracted afterwards
+} 
+
 #pragma DATA_SECTION(data_br_buf,"data_br_buf");	//Kommando der placere arrayet med bit reversed pladser et bestemt sted
 #pragma DATA_ALIGN(data_br_buf,2048);			//-||-
 Int32 data_br_buf[1024];						//Array der har sine indgange bit reversed
 
 #pragma DATA_SECTION(scratch_buf,"scratch_buf");	//Kommando der placere arrayet med bit reversed pladser et bestemt sted
 #pragma DATA_ALIGN(scratch_buf,2048);			//-||-
-Int32 scratch_buf[1024];						//Array der indeholder bare reele og imaginære værdier, men indgangende har skiftet plads med bit reverse
+Int32 scratch_buf[1024];						//Array der indeholder bare reele og imaginÃ¦re vÃ¦rdier, men indgangende har skiftet plads med bit reverse
 Int32 absolute_value[1024];
 
 void main(void) //main
@@ -306,10 +312,7 @@ void main(void) //main
 //							------------  ABSOLUTE VALUE	-------------									
 														// The for loop below is making negative samples positive as part of the envelope algorithm
 		for(i = 1024; i < 2048; i++){
-			if(signal_buffer[i] < 0)
-			{
-				signal_buffer[i] = signal_buffer[i] * -1;
-			}	
+			getAbs(signal_buffer[i]);			
 		}
 
 //							------------  LOW PASS FILTERING	-------------		
