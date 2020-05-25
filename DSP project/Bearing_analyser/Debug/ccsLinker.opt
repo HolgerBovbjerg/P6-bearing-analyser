@@ -1,0 +1,19 @@
+-vcpu:3.3 
+--symdebug:coff 
+--define="_DEBUG" --define="C55X" 
+--diag_warning=225 
+--ptrdiff_size=32 
+--algebraic 
+--no_mac_expand 
+--memory_model=huge 
+--asm_source=algebraic 
+-z 
+-m"VC5505_FFT_Filter_Demo.map" 
+--stack_size=1000 
+--warn_sections 
+-i"C:/Program Files/Texas Instruments/ccsv4/tools/compiler/c5500/lib" -i"C:/Program Files/Texas Instruments/ccsv4/tools/compiler/c5500/include" -i"C:/Program Files/Texas Instruments/bios_5_40_03_23/packages/ti/rtdx/lib/c5500" -i"C:/Program Files/Texas Instruments/bios_5_40_03_23/packages/ti/bios/lib" -i"C:/Documents and Settings/A0272163/My Documents/Projects/2010-01-08 - C5505 FFT Demo/Bug_Fix_2010-05-10/project" -i"C:/CCSTUD~1.3/C5500/csl/lib" 
+--reread_libs 
+--entry_point=reset_isr 
+--rom_model 
+--sys_stacksize=1000 
+"../c5505.cmd" "./vector.obj" "./rtc_routines.obj" "./main.obj" "./i2s_routines.obj" "./i2s_register.obj" "./hwafft.obj" "./filter_routines.obj" "./dma_routines.obj" "./configuration.obj" "./codec_routines.obj" -l"rts55h.lib" 
